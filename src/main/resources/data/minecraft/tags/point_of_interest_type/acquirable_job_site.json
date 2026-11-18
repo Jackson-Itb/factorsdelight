@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     {
-      "id": "provisionersdelight:provisioner_poi",
+      "id": "factorsdelight:factor_poi",
       "required": false
     }
   ]

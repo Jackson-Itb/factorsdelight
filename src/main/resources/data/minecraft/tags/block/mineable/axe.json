@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "provisionersdelight:provision_counter"
+    "factorsdelight:factor_counter"
   ]
 }

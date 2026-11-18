@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "factorsdelight:block/factor_counter_bottom",
+    "side": "factorsdelight:block/factor_counter_side",
+    "top": "factorsdelight:block/factor_counter_top"
+  }
+}

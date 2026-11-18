@@ -1,6 +1,0 @@
-{
-  "itemGroup.provisionersdelight": "Provisioner's Delight",
-  "block.provisionersdelight.provision_counter": "Provision Counter",
-  "block.provisionersdelight.provision_counter.desc": "Job site for Provisioners. They buy packed crates and bags, and pay emeralds.",
-  "entity.minecraft.villager.provisionersdelight.provisioner": "Provisioner"
-}

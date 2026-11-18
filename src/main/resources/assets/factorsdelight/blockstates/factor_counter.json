@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "factorsdelight:block/factor_counter"
+    }
+  }
+}

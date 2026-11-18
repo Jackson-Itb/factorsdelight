@@ -7,9 +7,9 @@ modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
 logoFile="logo.png"
-authors="Provisioner's Delight"
+authors="Factor's Delight"
 description='''
-Farmer's Delight addon that adds the Provisioner.
+Farmer's Delight addon that adds the Factor.
 A villager who buys Crate Delight and Farmer's Delight crates and pays emeralds, so a farm can pack its harvest and sell it wholesale.
 '''
 

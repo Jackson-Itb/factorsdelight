@@ -1,0 +1,6 @@
+{
+  "itemGroup.factorsdelight": "Factor's Delight",
+  "block.factorsdelight.factor_counter": "Factor's Counter",
+  "block.factorsdelight.factor_counter.desc": "Job site for Factors. They buy packed crates and bags, and pay emeralds.",
+  "entity.minecraft.villager.factorsdelight.factor": "Factor"
+}

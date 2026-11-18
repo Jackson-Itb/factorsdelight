@@ -1,8 +1,8 @@
-# Provisioner's Delight
+# Factor's Delight
 
-NeoForge addon for **Minecraft 1.21.1**. Adds one villager, the **Provisioner**, who buys packed farm goods and pays emeralds.
+NeoForge addon for **Minecraft 1.21.1**. Adds one villager, the **Factor**, who buys packed farm goods and pays emeralds.
 
-The built jar in this repo is [release/provisionersdelight-1.0.0.jar](release/provisionersdelight-1.0.0.jar). It is the same file that was compiled here (SHA-256 `8fcd477c393ead972f1a016cf0eb57c90f8f3c2e7b4a4332fe32e7ce92a882cf`), not a rebuild.
+The built jar in this repo is [release/factorsdelight-1.0.0.jar](release/factorsdelight-1.0.0.jar). Mod id is `factorsdelight`, so it can sit next to the other Provisioner's Delight mod. SHA-256 `b0ae0c2ef736442bc0c587b7d10ee62646496dc62d68624ae560b29bb0963003`.
 
 The jars this was built against are Farmer's Delight 1.3.4, Crate Delight 26.07.01, Chef's Delight 1.0.6, and Create 6.0.10, all for **1.21.1 NeoForge**. It will not load on 1.20.1. Those mods are not 1.20.1 builds.
 
@@ -15,25 +15,25 @@ The jars this was built against are Farmer's Delight 1.3.4, Crate Delight 26.07.
 
 Create is **not** required. If you already run a Create factory, mechanical crafters follow the normal crate recipes, so the line can pack crops and you can sell the crates. Expanded Delight is optional: peanut crates, salt bags, and cinnamon bags are bought only when it is installed.
 
-## How a villager becomes a Provisioner
+## How a villager becomes a Factor
 
-Craft a **Provision Counter**:
+Craft a **Factor's Counter**:
 
 - paper, sticks, and a barrel on top of three Farmer's Delight straw
 
 Put it down near an unemployed villager who can path to it (about three blocks, same idea as a Chef's Delight skillet or cooking pot). One counter employs one villager. They need a bed, and they need to be able to reach the counter, or they will not restock.
 
 ```
-/summon minecraft:villager ~ ~ ~ {VillagerData:{profession:"provisionersdelight:provisioner",type:"minecraft:plains",level:1}}
+/summon minecraft:villager ~ ~ ~ {VillagerData:{profession:"factorsdelight:factor",type:"minecraft:plains",level:1}}
 ```
 
 Summoning them already employed only rolls that level's trades. Letting them take the job themselves is the reliable way to get the full ladder.
 
 ## What they pay
 
-A crate or bag is the normal 3x3 recipe, so it holds **9 items**. A vanilla farmer pays 1 emerald for roughly 20 wheat or 22 to 26 carrots or potatoes. The Provisioner pays **1 emerald for one staple crate** (9 crops). That is about two and a half to three times the loose rate. The extra is the wholesale bonus for packing.
+A crate or bag is the normal 3x3 recipe, so it holds **9 items**. A vanilla farmer pays 1 emerald for roughly 20 wheat or 22 to 26 carrots or potatoes. The Factor pays **1 emerald for one staple crate** (9 crops). That is about two and a half to three times the loose rate. The extra is the wholesale bonus for packing.
 
-Each offer has a limited number of sales. Villagers restock up to twice per Minecraft day. One Provisioner buying staples is about **32 emeralds a day** at the default rate (16 sales, two restocks). A hall of them is how a factory scales, not one villager with an infinite trade.
+Each offer has a limited number of sales. Villagers restock up to twice per Minecraft day. One Factor buying staples is about **32 emeralds a day** at the default rate (16 sales, two restocks). A hall of them is how a factory scales, not one villager with an infinite trade.
 
 Carrot, potato, and beetroot crates come from **Farmer's Delight** when both mods are installed. Crate Delight disables its copies of those three recipes so they do not collide. Cabbage, tomato, onion, rice bags, and rice bales are Farmer's Delight too. Everything else in the list is a Crate Delight crate or bag.
 
@@ -62,7 +62,7 @@ Golden carrot crates are 9 carrots and 8 gold ingots. Golden apple crates are 9 
 
 Sugar and gunpowder pay less per bag because those farms are fast. Seeds and poisonous potatoes are a dump.
 
-Config file: `config/provisionersdelight-common.toml`
+Config file: `config/factorsdelight-common.toml`
 
 - `emeraldMultiplier` defaults to `1.0`. `2.0` doubles every emerald they pay or charge.
 - `crateMultiplier` defaults to `1.0`. `2.0` makes them demand twice as many crates.
@@ -78,4 +78,4 @@ Java 21 and the Gradle wrapper in this folder.
 ./gradlew build
 ```
 
-The mod jar is `build/libs/provisionersdelight-1.0.0.jar`.
+The mod jar is `build/libs/factorsdelight-1.0.0.jar`.
