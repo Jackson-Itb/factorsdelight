@@ -1,0 +1,53 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="logo.png"
+authors="Provisioner's Delight"
+description='''
+Farmer's Delight addon that adds the Provisioner.
+A villager who buys Crate Delight and Farmer's Delight crates and pays emeralds, so a farm can pack its harvest and sell it wholesale.
+'''
+
+[[mixins]]
+config="${mod_id}.mixins.json"
+
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.219,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="farmersdelight"
+type="required"
+versionRange="[1.3.4,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="cratedelight"
+type="required"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="expandeddelight"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+reason="Peanut crates and salt or cinnamon bags are bought only when this mod is installed."

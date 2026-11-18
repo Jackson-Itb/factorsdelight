@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PSP",
+    "SBS",
+    "RRR"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "minecraft:barrel"
+    },
+    "R": {
+      "item": "farmersdelight:straw"
+    }
+  },
+  "result": {
+    "id": "provisionersdelight:provision_counter",
+    "count": 1
+  }
+}
